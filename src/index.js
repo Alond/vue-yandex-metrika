@@ -9,6 +9,8 @@ export default function install (Vue, options = {}) {
 
     loadScript(() => { // Load Metrika script
         const metrika = createMetrika(Vue) // Create Metrika
+        Vue.config.globalProperties.$metrika = metrika
         startTracking(metrika) // Start autotracking
     }, options.scriptSrc)
+
 }
