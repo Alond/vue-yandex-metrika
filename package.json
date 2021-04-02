@@ -7,6 +7,7 @@
     "url": "https://github.com/vchaptsev/vue-yandex-metrika"
   },
   "scripts": {
+    "prepare": "npm run build",
     "commit": "git-cz",
     "dev": "node ./config/scripts/dev.js",
     "build": "node ./config/scripts/build.js",
@@ -68,7 +69,7 @@
     "semantic-release-cli": "^4.0.6",
     "vue": "^2.5.9",
     "vue-router": "^3.0.1",
-    "webpack": "^3.9.1",
+    "webpack": "^3.12.0",
     "webpack-merge": "^4.1.1"
   }
 }
